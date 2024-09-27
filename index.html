@@ -8,15 +8,17 @@
     <style>
         body {
             background: linear-gradient(to right, #f9f9fb, #d4edda);
-            /* Changed to light green gradient */
             font-family: 'Arial', sans-serif;
             color: #333;
             padding: 20px;
-            /* Reduced padding for better fit */
             margin: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            /* Center content vertically */
+            min-height: 100vh;
+            /* Full height adjust for the body */
         }
 
         .container {
@@ -24,7 +26,6 @@
             align-items: center;
             justify-content: center;
             max-width: 100%;
-            /* Ensure full width */
             flex-wrap: wrap;
             background-color: #ffffff;
             border-radius: 15px;
@@ -40,34 +41,33 @@
             padding: 20px;
             border-radius: 10px;
             background-color: #f0fff0;
-            /* Changed to a very light green */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
-            font-size: 60px;
-            /* Increased font size */
+            font-size: 3em;
+            /* Responsive size */
             color: #28a745;
-            /* Changed header color to a shade of green */
             margin-bottom: 20px;
             text-align: center;
             text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
         }
 
         .message {
-            font-size: 24px;
-            /* Increased font size */
+            font-size: 1.5em;
+            /* Responsive size */
             line-height: 1.7;
             color: #4a4a4a;
             margin: 0;
         }
 
         .image {
-            width: 300px;
-            /* Increased image width if needed */
+            width: 100%;
+            /* Make image responsive */
+            max-width: 300px;
+            /* Limit size */
             border-radius: 15px;
             border: 5px solid #28a745;
-            /* Changed to the same green color for consistency */
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
         }
@@ -78,8 +78,8 @@
 
         .footer {
             margin-top: 30px;
-            font-size: 20px;
-            /* Increased footer font size */
+            font-size: 1.2em;
+            /* Responsive size */
             color: #666;
             text-align: center;
             font-style: italic;
@@ -88,12 +88,28 @@
         @media (max-width: 768px) {
             .container {
                 flex-direction: column;
+                /* Stack elements on smaller screens */
                 align-items: center;
             }
 
             .text-section {
                 max-width: 90%;
                 /* Ensure it adapts to smaller screens */
+            }
+
+            h1 {
+                font-size: 2.5em;
+                /* Adjust size for smaller screens */
+            }
+
+            .message {
+                font-size: 1.2em;
+                /* Adjust size for better readability */
+            }
+
+            .footer {
+                font-size: 1em;
+                /* Ensure footer is readable */
             }
         }
     </style>
@@ -113,14 +129,13 @@
                 Keep pushing boundaries and making music—in every sense of the word! Wishing you a year filled with
                 innovation, success, and endless inspiration.<br><br>
                 To the tech field, I say karibu!<br><br>
-                Best wishes,<br>
-
+                Best wishe,<br>
             </p>
         </div>
         <img src="ima2.jpg" alt="Imaobong's Picture" class="image">
     </div>
     <div class="footer">Wishing you all the best for the year ahead!</div>
+    <footer>&copy; 2024 All rights reserved. Made by tech enthusiast.</footer>
 </body>
-<footer>&copy; 2024 All rights reserved. Made by tech enthusiast.</footer>
 
 </html>
